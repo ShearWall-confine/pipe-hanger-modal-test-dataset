@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Modal Test Dataset for Pipe Hanger Equivalent Parameters
+message: Please cite the associated paper and this dataset when reusing the data.
+type: dataset
+authors:
+  - family-names: Wang
+    given-names: Ziyu
+version: 1.0.0
+date-released: 2026-05-14
+license: CC-BY-4.0

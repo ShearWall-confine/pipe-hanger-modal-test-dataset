@@ -1,0 +1,1 @@
+"""Damping analysis package."""

@@ -1,0 +1,69 @@
+{
+  "path": "data\\metadata\\COMPARE_6.xlsx",
+  "sheetnames": [
+    "CA",
+    "TB",
+    "CSBD",
+    "CSB",
+    "help"
+  ],
+  "missing_expected_sheets": [],
+  "sheets": [
+    {
+      "sheet": "CA",
+      "rows": 73,
+      "cols": 19,
+      "mode_counter": {
+        "径向平动": 16,
+        "轴向平动": 16,
+        "平面转动": 16
+      },
+      "transition_count": 22,
+      "issue_count": 0,
+      "issue_counter": {},
+      "issues": []
+    },
+    {
+      "sheet": "TB",
+      "rows": 97,
+      "cols": 19,
+      "mode_counter": {
+        "径向平动": 32,
+        "轴向平动": 32,
+        "平面转动": 32
+      },
+      "transition_count": 42,
+      "issue_count": 0,
+      "issue_counter": {},
+      "issues": []
+    },
+    {
+      "sheet": "CSBD",
+      "rows": 100,
+      "cols": 19,
+      "mode_counter": {
+        "径向平动": 4,
+        "轴向平动": 4,
+        "平面转动": 4
+      },
+      "transition_count": 6,
+      "issue_count": 0,
+      "issue_counter": {},
+      "issues": []
+    },
+    {
+      "sheet": "CSB",
+      "rows": 100,
+      "cols": 19,
+      "mode_counter": {
+        "径向平动": 4,
+        "轴向平动": 4,
+        "平面转动": 4
+      },
+      "transition_count": 6,
+      "issue_count": 0,
+      "issue_counter": {},
+      "issues": []
+    }
+  ]
+}

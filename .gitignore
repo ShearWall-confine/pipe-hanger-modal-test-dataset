@@ -1,0 +1,22 @@
+# Local Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments and plotting caches
+.venv/
+venv/
+.env
+.mplconfig/
+.mpl/
+_generated_tiff/
+
+# Generated local H5 databases are release assets, not Git-tracked files
+data/derived/modal_db*.h5
+release_assets/*.h5
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.tmp
+~$*

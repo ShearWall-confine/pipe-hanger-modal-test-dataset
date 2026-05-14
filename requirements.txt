@@ -1,0 +1,7 @@
+numpy
+scipy
+h5py
+xlrd
+openpyxl
+matplotlib
+IPython
