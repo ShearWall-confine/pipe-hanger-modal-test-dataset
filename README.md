@@ -4,10 +4,10 @@ This repository contains the modal-test dataset and reproducibility scripts used
 
 ## Quick Access
 
-- Primary database: `modal_db_v1.0.h5`
-- Release asset path before publishing: `release_assets/modal_db_v1.0.h5`
+- Primary database: [modal_db_v1.0.h5](https://github.com/ShearWall-confine/pipe-hanger-modal-test-dataset/releases/download/v1.0.0/modal_db_v1.0.h5)
 - File size: `88191071` bytes
 - SHA256: `1b8580ceba54795c57a9cdb8dbbbc46bb71712b151a0d7ca8a4d2d2204707e2f`
+
 
 After creating a GitHub release, upload `release_assets/modal_db_v1.0.h5` as the release asset and replace this paragraph with the release download URL.  The H5 file is intentionally ignored by Git so the repository stays lightweight.
 
