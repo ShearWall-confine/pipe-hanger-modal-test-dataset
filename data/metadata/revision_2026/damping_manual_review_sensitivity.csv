@@ -1,0 +1,40 @@
+﻿subset,support_type,mode,retained_trace_count,zeta_median,zeta_p25,zeta_p75,zeta_mean,velocity_domain_inverse_amplitude_C_median,C_fit_cycle_count,coefficient_note
+baseline,CA,axial,115,0.00218587315242,0.0016680970159,0.00350148163967,0.00402669252004,0.143648204947,4356,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,CA,planar_rotation,7,0.00941014600803,0.00399082989236,0.011792787813,0.00811087815592,1.41465319683,59,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,CA,radial,115,0.00218587315242,0.0016680970159,0.00350148163967,0.00402669252004,0.143648204947,4356,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,CSB,axial,29,0.0019067362281,0.00119772250651,0.00360709907467,0.00469737145463,0.0878678133208,860,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,CSB,planar_rotation,31,0.00263377861,0.00126950294503,0.00405349913922,0.00505361156917,0.0884135816415,918,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,CSB,radial,1,0.000745920205511,0.000745920205511,0.000745920205511,0.000745920205511,,0,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,CSBD,radial,1,0.0218923965344,0.0218923965344,0.0218923965344,0.0218923965344,,0,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,TB,axial,192,0.0127699874781,0.0104263754997,0.0155713992226,0.0128857412364,1.37160375885,2406,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,TB,planar_rotation,162,0.0114400618167,0.00852841497285,0.0152573235199,0.0113146602269,1.21569765599,1888,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,TB,radial,67,0.013812143621,0.0110700599324,0.0155747802954,0.013902384391,1.56822349711,692,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,SR_combined,axial,221,0.0118059236607,0.00944229323565,0.0151601630512,0.0118112492741,1.07468346495,3266,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,SR_combined,planar_rotation,193,0.0101759928234,0.00416244504208,0.0145708765471,0.0103089995617,0.8970577149,2806,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+baseline,SR_combined,radial,69,0.013812143621,0.0107403791691,0.015587226905,0.0138275082744,1.56822349711,692,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,CA,axial,115,0.00218587315242,0.0016680970159,0.00350148163967,0.00402669252004,0.143648204947,4356,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,CA,planar_rotation,7,0.00941014600803,0.00399082989236,0.011792787813,0.00811087815592,1.41465319683,59,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,CA,radial,115,0.00218587315242,0.0016680970159,0.00350148163967,0.00402669252004,0.143648204947,4356,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,CSB,axial,29,0.0019067362281,0.00119772250651,0.00360709907467,0.00469737145463,0.0878678133208,860,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,CSB,planar_rotation,31,0.00263377861,0.00126950294503,0.00405349913922,0.00505361156917,0.0884135816415,918,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,CSB,radial,1,0.000745920205511,0.000745920205511,0.000745920205511,0.000745920205511,,0,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,CSBD,radial,1,0.0218923965344,0.0218923965344,0.0218923965344,0.0218923965344,,0,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,TB,axial,192,0.0127699874781,0.0104263754997,0.0155713992226,0.0128857412364,1.37160375885,2406,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,TB,planar_rotation,162,0.0114400618167,0.00852841497285,0.0152573235199,0.0113146602269,1.21569765599,1888,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,TB,radial,67,0.013812143621,0.0110700599324,0.0155747802954,0.013902384391,1.56822349711,692,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,SR_combined,axial,221,0.0118059236607,0.00944229323565,0.0151601630512,0.0118112492741,1.07468346495,3266,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,SR_combined,planar_rotation,193,0.0101759928234,0.00416244504208,0.0145708765471,0.0103089995617,0.8970577149,2806,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+exclude_29_manual_critical,SR_combined,radial,69,0.013812143621,0.0107403791691,0.015587226905,0.0138275082744,1.56822349711,692,"C_v=median(v_a*zeta_local) for v_a>30 mm/s; observational velocity-domain proxy, not an identified friction coefficient"
+comparison,CA,axial,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,CA,planar_rotation,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,CA,radial,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,CSB,axial,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,CSB,planar_rotation,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,CSB,radial,0,0,,,0,,0,percent change from baseline; count columns are absolute differences
+comparison,CSBD,radial,0,0,,,0,,0,percent change from baseline; count columns are absolute differences
+comparison,SR_combined,axial,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,SR_combined,planar_rotation,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,SR_combined,radial,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,TB,axial,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,TB,planar_rotation,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences
+comparison,TB,radial,0,0,,,0,0,0,percent change from baseline; count columns are absolute differences

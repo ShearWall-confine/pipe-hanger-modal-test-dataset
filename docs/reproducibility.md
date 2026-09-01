@@ -2,7 +2,7 @@
 
 ## Workflow
 
-1. Start from the 55 Excel files in `data/raw_xls/`.
+1. Start from the 56 Excel files in `data/raw_xls/`.
 2. Build the waveform H5 database.
 3. Import curated modal frequencies from `data/metadata/COMPARE_6.xlsx`.
 4. Validate workbook consistency and H5 completeness.
@@ -26,6 +26,8 @@ data/derived/modal_db.h5
 
 and then run the validation and figure commands.
 
+The v1.1 release H5 is the authoritative database for reproducing the revised-manuscript analyses because it preserves curated modal results and optional adjusted-signal arrays alongside the unchanged raw signals. A rebuild from the public Excel files recreates the raw waveform structure, but the curated imports and provenance-governed adjusted arrays require their corresponding processing steps.
+
 ## Output Policy
 
 - `modal_db.h5` is the main structured database but is distributed as a GitHub Release asset, not as a Git-tracked file.
@@ -38,3 +40,4 @@ and then run the validation and figure commands.
 - The public naming has already normalized historical prefixes: `TR` records are represented as `CSBD`, and `CS` records are represented as `CSB`.
 - `COMPARE_6.xlsx` is the curated frequency source used for stiffness calibration.
 - H5 waveform records are retained to support damping, frequency-drift, and equivalent-linear applicability checks.
+- Revision-specific machine-readable evidence is stored in `data/metadata/revision_2026/`; these files document analysis decisions and sensitivity checks without overwriting the source waveforms.

@@ -1,20 +1,21 @@
 # Modal Test Dataset for Pipe Hanger Equivalent Parameters
 
-This repository contains the modal-test dataset and reproducibility scripts used to calibrate and validate equivalent parameters for full-scale pipe hanger specimens.  The public database is centred on `modal_db.h5`, with the original Excel records retained for traceability and rebuilds.
+This repository contains the modal-test dataset and reproducibility scripts used to calibrate and internally assess equivalent parameters for full-scale pipe hanger specimens. The public database is centred on `modal_db.h5`, with the original Excel records retained for traceability and rebuilds.
 
 ## Quick Access
 
-- Primary database: [modal_db_v1.0.h5](https://github.com/ShearWall-confine/pipe-hanger-modal-test-dataset/releases/download/v1.0.0/modal_db_v1.0.h5)
-- File size: `88191071` bytes
-- SHA256: `1b8580ceba54795c57a9cdb8dbbbc46bb71712b151a0d7ca8a4d2d2204707e2f`
+- Primary database: [modal_db_v1.1.h5](https://github.com/ShearWall-confine/pipe-hanger-modal-test-dataset/releases/download/v1.1.0/modal_db_v1.1.h5)
+- File size: `291567448` bytes
+- SHA256: `8d14ee61df2b82514540875d09fbe8a2f969b0faf1e97a567ce6f83043ba0f82`
+- Previous 55-condition release: [v1.0.0](https://github.com/ShearWall-confine/pipe-hanger-modal-test-dataset/releases/tag/v1.0.0)
 
-
-After creating a GitHub release, upload `release_assets/modal_db_v1.0.h5` as the release asset and replace this paragraph with the release download URL.  The H5 file is intentionally ignored by Git so the repository stays lightweight.
+The v1.1 database contains all 56 completed conditions. Raw signals remain unchanged. Where a processed signal is available, it is stored separately as `signal_adjusted` and documented by the revision evidence package.
 
 ## Repository Layout
 
-- `data/raw_xls/`: 55 original DASP-exported Excel waveform files.
+- `data/raw_xls/`: 56 original DASP-exported Excel waveform files.
 - `data/metadata/`: experiment index, renaming log, manual frequency workbook, and validation reports.
+- `data/metadata/revision_2026/`: machine-readable decision, provenance, sensitivity, applicability, and mapping-audit records supporting the revised manuscript.
 - `data/derived/`: compact CSV/XLSX outputs used by the paper figures and tables.
 - `figures/pdf/`, `figures/png/`: paper figure exports for manuscript use and GitHub preview.
 - `src/`: reproducibility code for H5 construction, frequency import, damping analysis, scaling-law analysis, and figure generation.
@@ -47,6 +48,10 @@ Regenerate the paper figures:
 ```bash
 python scripts/run_paper_figures.py --target all
 ```
+
+## Revised-Manuscript Evidence
+
+The [`data/metadata/revision_2026/`](data/metadata/revision_2026/) directory provides the 56-condition index, the complete 168-row condition--mode decision record, signal-provenance metadata, calibration-sensitivity tables, NLI window data, and the parameter-level shared-axial audit. The decision record distinguishes 139 entries supported by at least one auxiliary-rule channel from 29 entries requiring manual review. This classification makes the historical decisions auditable but does not imply that an unrecorded channel choice can be reconstructed automatically.
 
 ## Requirements
 

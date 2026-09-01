@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
 import json
 from pathlib import Path
@@ -10,7 +11,8 @@ import h5py
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_H5 = REPO_ROOT / "data" / "derived" / "modal_db.h5"
-RELEASE_H5 = REPO_ROOT / "release_assets" / "modal_db_v1.0.h5"
+RELEASE_H5 = REPO_ROOT / "release_assets" / "modal_db_v1.1.h5"
+EXPERIMENT_INDEX = REPO_ROOT / "data" / "metadata" / "experiment_index.csv"
 
 
 def sha256(path: Path) -> str:
@@ -53,6 +55,23 @@ def validate_h5(path: Path) -> dict:
         }
 
 
+def validate_experiment_index() -> dict:
+    with EXPERIMENT_INDEX.open("r", encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+    indexed_files = [row["current_filename"] for row in rows]
+    raw_files = sorted(path.name for path in (REPO_ROOT / "data" / "raw_xls").glob("*.XLS"))
+    indexed_set = set(indexed_files)
+    raw_set = set(raw_files)
+    duplicates = sorted({name for name in indexed_files if indexed_files.count(name) > 1})
+    return {
+        "row_count": len(rows),
+        "duplicate_current_filenames": duplicates,
+        "raw_files_missing_from_index": sorted(raw_set - indexed_set),
+        "index_files_missing_from_raw": sorted(indexed_set - raw_set),
+        "matches_raw_files": not duplicates and raw_set == indexed_set,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Validate the public modal-test dataset package.")
     parser.add_argument("--h5", type=Path, default=DEFAULT_H5)
@@ -63,6 +82,7 @@ def main() -> None:
     h5_path = args.h5 if args.h5.exists() else RELEASE_H5
     report = {
         "raw_xls_count": raw_xls_count,
+        "experiment_index": validate_experiment_index(),
         "h5_path": str(h5_path),
         "h5_size_bytes": h5_path.stat().st_size if h5_path.exists() else None,
         "h5_sha256": sha256(h5_path) if h5_path.exists() else None,
@@ -72,6 +92,7 @@ def main() -> None:
         print(json.dumps(report, ensure_ascii=False, indent=2))
     else:
         print("raw_xls_count=", report["raw_xls_count"])
+        print("experiment_index=", report["experiment_index"])
         print("h5_path=", report["h5_path"])
         print("h5_size_bytes=", report["h5_size_bytes"])
         print("h5_sha256=", report["h5_sha256"])

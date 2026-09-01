@@ -1,6 +1,6 @@
 # H5 Schema
 
-Primary release asset: `modal_db_v1.0.h5`.
+Primary release asset: `modal_db_v1.1.h5`.
 
 ## Root Attributes
 
@@ -39,12 +39,13 @@ Primary release asset: `modal_db_v1.0.h5`.
       label
     datasets:
       signal
+      signal_adjusted (optional; raw signal is retained separately)
       freq_peaks
       /spectrum/freq
       /spectrum/mag
 ```
 
-Damping extraction scripts may add derived damping groups or datasets to the same experiment groups when rerun locally.
+Damping extraction scripts may add derived damping groups or datasets to the same experiment groups when rerun locally. The optional `signal_adjusted` dataset is used only when it exists; its provenance and channel-specific factor are recorded in `data/metadata/revision_2026/signal_provenance_channels.csv`.
 
 ## Minimal Read Example
 
@@ -64,7 +65,7 @@ with h5py.File(h5_path, "r") as h5:
 
 ## Current Database Summary
 
-- Experiment count: `55`
-- Support counts: `CA=16`, `TB=31`, `CSB=4`, `CSBD=4`
-- Direction counts: `AA=8`, `AR=8`, `RA=8`, `RR=8`, `A=11`, `R=12`
-- Release SHA256: `1b8580ceba54795c57a9cdb8dbbbc46bb71712b151a0d7ca8a4d2d2204707e2f`
+- Experiment count: `56`
+- Support counts: `CA=16`, `TB=32`, `CSB=4`, `CSBD=4`
+- Direction counts: `AA=8`, `AR=8`, `RA=8`, `RR=8`, `A=12`, `R=12`
+- Release SHA256: `8d14ee61df2b82514540875d09fbe8a2f969b0faf1e97a567ce6f83043ba0f82`

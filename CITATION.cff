@@ -5,6 +5,8 @@ type: dataset
 authors:
   - family-names: Wang
     given-names: Ziyu
-version: 1.0.0
-date-released: 2026-05-14
+version: 1.1.0
+date-released: 2026-09-02
 license: CC-BY-4.0
+repository-code: https://github.com/ShearWall-confine/pipe-hanger-modal-test-dataset
+url: https://github.com/ShearWall-confine/pipe-hanger-modal-test-dataset/releases/tag/v1.1.0

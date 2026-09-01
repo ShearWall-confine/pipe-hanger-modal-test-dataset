@@ -1,0 +1,13 @@
+﻿support_type,mode,channel_level_rows,condition_mode_rows,auxiliary_rule_supported,manual_critical,damping_total_traces,damping_valid_traces,damping_final_parameter_summary_traces,damping_after_raw_low_amplitude_screen_for_amplitude_figures,NLI_windows,NLI_windows_after_29_exclusion,stiffness_denominator_note,damping_denominator_note
+CA,axial,320,16,16,0,320,141,115,141,0,0,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CA,planar_rotation,320,16,5,11,320,9,7,9,828,828,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CA,radial,320,16,16,0,320,141,115,141,18659,18659,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CSB,axial,80,4,4,0,80,32,29,23,4152,4152,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CSB,planar_rotation,80,4,4,0,80,36,31,27,599,599,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CSB,radial,80,4,2,2,80,2,1,1,0,0,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CSBD,axial,80,4,0,4,80,0,0,0,0,0,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CSBD,planar_rotation,80,4,0,4,80,0,0,0,0,0,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+CSBD,radial,80,4,1,3,80,3,1,3,23,23,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+TB,axial,640,32,32,0,640,221,192,221,5225,5225,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+TB,planar_rotation,640,32,32,0,640,185,162,182,8417,8417,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
+TB,radial,640,32,27,5,640,86,67,85,2006,2006,one condition-level frequency per condition-mode,20 channel-mode traces per condition-mode before envelope screening
